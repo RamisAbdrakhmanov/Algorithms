@@ -1,5 +1,7 @@
 package litcode.algorithmOne.TwoPointers;
 
+import litcode.ListNode;
+
 public class Solutions19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode fast = head, slow = head;

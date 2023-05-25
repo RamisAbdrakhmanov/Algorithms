@@ -1,4 +1,4 @@
-package litcode.interview.questions;
+package litcode.interview.questions.easy;
 
 import java.util.Stack;
 

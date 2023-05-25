@@ -1,7 +1,4 @@
-package litcode.interview.questions;
-
-import java.util.HashMap;
-import java.util.Map;
+package litcode.interview.questions.easy;
 
 public class LongestCommonPrefix {
     public static void main(String[] args) {

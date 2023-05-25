@@ -1,4 +1,4 @@
-package litcode.interview.questions;
+package litcode.interview.questions.easy;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {

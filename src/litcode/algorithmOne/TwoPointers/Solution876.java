@@ -1,5 +1,7 @@
 package litcode.algorithmOne.TwoPointers;
 
+import litcode.ListNode;
+
 public class Solution876 {
     public static void main(String[] args) {
 
