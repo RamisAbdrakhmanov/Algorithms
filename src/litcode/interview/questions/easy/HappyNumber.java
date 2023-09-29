@@ -13,9 +13,9 @@ public class HappyNumber {
     public boolean isHappy(int n) {
         Set<Integer> set = new HashSet<>();
         int next = n;
-        while( next!= 1 ){
+        while (next != 1) {
             next = getNext(next);
-            if(set.contains(next)){
+            if (set.contains(next)) {
                 return false;
             } else {
                 set.add(next);
@@ -25,15 +25,12 @@ public class HappyNumber {
 
     }
 
-    public int getNext(int numb){
-        List<Integer> list = new ArrayList<>();
-        while(numb > 0){
-            list.add(numb%10);
-            numb /=10;
-        }
+    public int getNext(int numb) {
         int sum = 0;
-        for (Integer i : list){
-            sum += (i * i);
+        while (numb > 0) {
+            int i = numb % 10;
+            sum += i * i;
+            numb /= 10;
         }
         return sum;
     }
