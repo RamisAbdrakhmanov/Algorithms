@@ -1,40 +1,37 @@
-/*
 package litcode.interview.questions.medium;
 
+import java.util.*;
+
 class MinStack {
-    int val;
-    MinStack previous;
-    MinStack next;
+    Stack<Integer> stack;
+    PriorityQueue<Integer> priority = new PriorityQueue<>(Comparator.comparingInt(value -> value));
 
     public MinStack() {
-
-    }
-
-    private MinStack(int val, MinStack previous){
-        this.val = val;
-        this.previous = previous;
+        stack = new Stack<>();
     }
 
 
     public void push(int val) {
-        MinStack stack = new MinStack(val,this);
-        this = stack;
+        stack.push(val);
+        priority.add(val);
     }
 
     public void pop() {
-        this = this.previous;
+        priority.remove(stack.pop());
     }
 
     public int top() {
-
+        return stack.peek();
     }
 
     public int getMin() {
-
+        if(!priority.isEmpty()) {
+            return priority.peek();
+        }
+        return 0;
     }
 }
 
-*/
 /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();

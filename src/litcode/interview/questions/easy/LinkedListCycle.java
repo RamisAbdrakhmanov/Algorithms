@@ -4,10 +4,17 @@ import litcode.ListNode;
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {
-        int count = 10*10*10*10 +2;
-        while((head != null) || count--> 0){
-            head = head.next;
+
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(fast  == slow){
+                return true;
+            }
         }
-        return count == 0;
+        return false;
     }
 }
