@@ -1,11 +1,6 @@
-package litcode.interview.questions.easy;
+package litcode.interview.questions.medium;
 
 import litcode.ListNode;
-import yandex.lesson.first_1.I;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
 
 public class AddTwoNumbers {
     public static void main(String[] args) {
