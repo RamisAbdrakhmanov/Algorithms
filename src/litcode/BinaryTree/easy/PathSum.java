@@ -1,4 +1,4 @@
-package litcode.interview.questions.easy;
+package litcode.BinaryTree.easy;
 
 import litcode.TreeNode;
 
@@ -11,9 +11,7 @@ public class PathSum {
             return targetSum == root.val;
         }
 
-        int nextTargetSum = targetSum - root.val;
-        return hasPathSum(root.left, nextTargetSum) || hasPathSum(root.right, nextTargetSum);
+        int difference = targetSum - root.val;
+        return hasPathSum(root.left, difference) || hasPathSum(root.right, difference);
     }
-
-
 }
