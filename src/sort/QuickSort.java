@@ -6,7 +6,7 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] a = new int[10];
         for (int i = 0; i <=a.length - 1; i++) {
-            a[i] = i;
+            a[i] = (int) (Math.random() * 1000);
         }
         new QuickSort().sort(a, 0, a.length - 1);
         System.out.println(Arrays.toString(a));
@@ -22,7 +22,6 @@ public class QuickSort {
     }
 
     public int quick(int[] arr, int left, int right) {
-        System.out.println( left + " " + right);
         int mid = arr[left+(right - left) / 2];
         while (left <= right) {
             while (arr[left] < mid) {

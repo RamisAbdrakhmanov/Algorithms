@@ -1,24 +1,28 @@
 package sort;
 
 import java.util.Arrays;
-import java.util.Random;
 
-public class Bubble {
-    public static void main(String[] args) throws InterruptedException {
-
+//Сортировка расческой
+public class CombSort {
+    public static void main(String[] args) {
         int[] a = new int[100];
         for (int i = a.length - 1; i >= 0; i--) {
             a[i] = (int) (Math.random() * 1000);
         }
-        new Bubble().sort(a);
+        new CombSort().sort(a);
         System.out.println(Arrays.toString(a));
-
     }
 
     private void sort(int[] arr) {
-        boolean isSorted = false;
-        while (!isSorted) {
+        int gap = arr.length;
 
+        boolean isSorted = false;
+        while (!isSorted || gap != 1) {
+            if (gap > 1) {
+                gap = gap * 10 / 13;
+            } else {
+                gap = 1;
+            }
             isSorted = true;
 
             for (int i = 0; i < arr.length - 1; i++) {
@@ -33,5 +37,4 @@ public class Bubble {
             }
         }
     }
-
 }
