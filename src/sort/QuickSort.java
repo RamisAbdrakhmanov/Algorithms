@@ -4,10 +4,11 @@ import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] a = new int[10];
+        int[] a = new int[100];
         for (int i = 0; i <=a.length - 1; i++) {
             a[i] = (int) (Math.random() * 1000);
         }
+        System.out.println(Arrays.toString(a));
         new QuickSort().sort(a, 0, a.length - 1);
         System.out.println(Arrays.toString(a));
     }
