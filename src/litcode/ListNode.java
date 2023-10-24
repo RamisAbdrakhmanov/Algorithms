@@ -1,6 +1,17 @@
 package litcode;
 
+import litcode.LeetCode75.linked_list.PalindromeLinkedList;
+
 public class ListNode {
+    public static void main(String[] args) {
+        ListNode head = new ListNode(1);
+        ListNode save = head;
+        head.next = new ListNode(2);
+        head = head.next;
+        head.next = new ListNode(2);
+        head = head.next;
+        head = new ListNode(1);
+    }
     public int val;
     public ListNode next;
 
@@ -24,3 +35,5 @@ public class ListNode {
                 '}';
     }
 }
+
+
