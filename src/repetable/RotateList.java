@@ -1,5 +1,5 @@
 /*
-package litcode.interview.questions.medium;
+package litcode.LeetCode75.linked_list;
 
 import litcode.ListNode;
 
@@ -8,7 +8,7 @@ public class RotateList {
 
         ListNode n = new ListNode();
         ListNode c = n;
-        for (int i = 1; i < 6; i++) {
+        for (int i = 1; i < 3; i++) {
             c.val = i;
             if (i != 5) {
                 c.next = new ListNode();
@@ -16,7 +16,7 @@ public class RotateList {
             }
         }
 
-        System.out.println(rotateRight(n, 2));
+        System.out.println(rotateRight(n, 4));
     }
 
     public static ListNode rotateRight(ListNode head, int k) {
@@ -30,16 +30,17 @@ public class RotateList {
             size++;
         }
         temp.next = head;
+
         int rotation = k % size;
         int skip = size - rotation;
-        ListNode newLast = head;
 
+
+        temp = head;
         for (int i = 0; i < skip-1; i++) {
-            newLast = newLast.next;
+            temp = temp.next;
         }
-        head = newLast.next;
-        newLast.next = null;
-
+        head = temp.next;
+        temp.next = null;
 
         return head;
     }

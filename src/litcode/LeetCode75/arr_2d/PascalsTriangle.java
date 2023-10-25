@@ -1,4 +1,4 @@
-package litcode.interview.questions.easy;
+package litcode.LeetCode75.arr_2d;
 
 import java.util.ArrayList;
 import java.util.List;

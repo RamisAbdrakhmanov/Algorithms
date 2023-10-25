@@ -1,21 +1,22 @@
+/*
 package litcode.LeetCode75.linked_list;
 
 public class CopyListWithRandomPointer {
 
     public Node copyRandomList(Node head) {
-        if (head == null) {
+        if (head == null){
             return null;
         }
         Node cur = head;
-        while (cur != null) {
+        while (cur != null){
             Node temp = new Node(cur.val, cur.next);
             cur.next = temp;
             cur = temp.next;
         }
 
         cur = head;
-        while (cur != null) {
-            if (cur.random != null) {
+        while (cur != null){
+            if(cur.random != null){
                 cur.next.random = cur.random.next;
             }
             cur = cur.next.next;
@@ -25,7 +26,7 @@ public class CopyListWithRandomPointer {
         Node newNode = head.next;
         Node newHead = newNode;
 
-        while (old != null) {
+        while (old != null){
             old.next = old.next.next;
             newNode.next = newNode.next != null ? newNode.next.next : null;
             old = old.next;
@@ -33,7 +34,6 @@ public class CopyListWithRandomPointer {
         }
         return newHead;
     }
-
     class Node {
         int val;
         Node next;
@@ -48,3 +48,4 @@ public class CopyListWithRandomPointer {
 }
 
 
+*/
