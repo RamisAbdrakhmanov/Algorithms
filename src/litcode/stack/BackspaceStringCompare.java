@@ -1,4 +1,4 @@
-package litcode.LeetCode75.Stack;
+package litcode.stack;
 
 import java.util.Stack;
 
