@@ -1,5 +1,5 @@
-package repetable;/*
-package litcode.LeetCode75.array_string;
+/*
+package litcode.array_string;
 
 public class GreatestCommonDivisorOfStrings {
 
