@@ -1,4 +1,4 @@
-package litcode.stack;
+package litcode.stack.medium;
 
 import java.util.Stack;
 
