@@ -1,4 +1,4 @@
-package kotlin
+package kotlinTest
 
 class `Build Array from Permutation` {
     fun buildArray(nums: IntArray): IntArray {

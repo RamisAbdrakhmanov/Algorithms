@@ -1,4 +1,4 @@
-package kotlin
+package kotlinTest
 
 class `Find Words Containing Character` {
     fun findWordsContaining(words: Array<String>, x: Char): List<Int> {

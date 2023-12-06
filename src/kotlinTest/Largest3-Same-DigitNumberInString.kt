@@ -1,4 +1,4 @@
-package kotlin
+package kotlinTest
 
 class `Largest3-Same-DigitNumberInString` {
     fun largestGoodInteger(num: String): String {

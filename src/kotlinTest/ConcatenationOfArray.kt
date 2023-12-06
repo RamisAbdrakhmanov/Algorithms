@@ -1,4 +1,4 @@
-package kotlin
+package kotlinTest
 
 class ConcatenationOfArray {
     fun getConcatenation(nums: IntArray): IntArray {

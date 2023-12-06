@@ -1,4 +1,4 @@
-package kotlin
+package kotlinTest
 
 class `Count of Matches in Tournament` {
     fun numberOfMatches(n: Int): Int {
