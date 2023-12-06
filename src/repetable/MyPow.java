@@ -1,5 +1,5 @@
 /*
-package litcode.LeetCode75.recursion;
+package litcode.recursion;
 
 public class MyPow {
 

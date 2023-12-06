@@ -1,4 +1,4 @@
-package litcode.LeetCode75.recursion;
+package litcode.recursion;
 
 public class ReverseString {
     public void reverseString(char[] s) {

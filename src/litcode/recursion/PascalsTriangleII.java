@@ -1,4 +1,4 @@
-package litcode.LeetCode75.recursion;
+package litcode.recursion;
 
 import java.util.ArrayList;
 import java.util.List;
