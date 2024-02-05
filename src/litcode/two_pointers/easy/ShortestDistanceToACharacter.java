@@ -1,4 +1,4 @@
-package litcode.two_pointers;
+package litcode.two_pointers.easy;
 
 public class ShortestDistanceToACharacter {
     public int[] shortestToChar(String s, char c) {

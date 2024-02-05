@@ -1,4 +1,4 @@
-package litcode.two_pointers;
+package litcode.two_pointers.easy;
 
 public class SortArrayByParityII {
     public int[] sortArrayByParityII(int[] nums) {

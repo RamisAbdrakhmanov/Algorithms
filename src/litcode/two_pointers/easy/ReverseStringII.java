@@ -1,4 +1,4 @@
-package litcode.two_pointers;
+package litcode.two_pointers.easy;
 
 public class ReverseStringII {
     public String reverseStr(String s, int k) {

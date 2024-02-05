@@ -1,4 +1,4 @@
-package litcode.two_pointers;
+package litcode.two_pointers.easy;
 
 public class FindIndicesWithIndexAndValueDifferenceI {
     public int[] findIndices(int[] nums, int indexDifference, int valueDifference) {

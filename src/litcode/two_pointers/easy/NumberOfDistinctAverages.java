@@ -1,4 +1,4 @@
-package litcode.two_pointers;
+package litcode.two_pointers.easy;
 
 import java.util.Arrays;
 import java.util.HashSet;

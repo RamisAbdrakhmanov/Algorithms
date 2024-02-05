@@ -1,4 +1,4 @@
-package litcode.two_pointers;
+package litcode.two_pointers.easy;
 
 public class FindFirstPalindromicStringInTheArray {
     public String firstPalindrome(String[] words) {

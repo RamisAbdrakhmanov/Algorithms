@@ -1,10 +1,24 @@
 package aaaTESTaaa;
 
+import sort.Bubble;
+
 import java.util.*;
 
 public class Sum_3 {
 
-    public List<List<Integer>> threeSum(int[] nums) {
+    public static void main(String[] args) throws InterruptedException {
+
+    int[] a = new int[100];
+    for (int i = a.length - 1; i >= 0; i--) {
+        a[i] = (int) (Math.random() * 99);
+    }
+
+    System.out.println(threeSum(a));
+
+}
+
+
+    public static List<List<Integer>> threeSum(int[] nums) {
         Set<List<Integer>> set = new HashSet<>();
         for (int i = 0; i < nums.length-2; i++) {
             for (int j = i+1; j < nums.length-1; j++) {
