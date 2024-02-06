@@ -1,6 +1,5 @@
 package litcode.two_pointers.easy;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class LargestPositiveIntegerThatExistsWithItsNegative {
